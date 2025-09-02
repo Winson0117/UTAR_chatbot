@@ -3,7 +3,7 @@ import google.generativeai as genai
 
 # --- Setup Gemini ---
 genai.configure(api_key=st.secrets["API_KEY"])
-model = genai.GenerativeModel("gemini-pro")
+model = genai.GenerativeModel("models/gemini-2.5-flash")
 
 # --- Custom Q&A knowledge base ---
 faq = {
